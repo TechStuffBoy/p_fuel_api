@@ -1,2 +1,2 @@
 # p_fuel_api
-An API for retrieving fuel, diesel, and LPG prices in India. I couldn't find a better API for it, so I created one. It can scale down and up as needed by using AWS Lambda to handle millions of requests on the go.
+An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a better API, so I made one. It may scale up and down as needed. I used AWS Lambda, which can handle millions of requests in a month. It may also scale down if traffic is low.
