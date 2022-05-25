@@ -1,5 +1,6 @@
 # Fuel API
-An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a better API, so I made one. It scrapes from different sources and consolidates and persist in a Database. It may scale up and down as needed. I used AWS Lambda, which can handle millions(or more than that) of requests in a month in a fraction of cost. It may also scale down if traffic is low which further reduces the cost of the deployment.
+An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a better API, so I made one. It **scrapes from different sources** and consolidates and persist in a Database. It may scale up and down as needed. I used AWS Lambda, which can handle millions(or more than that) of requests in a month in a fraction of cost. It may also scale down if traffic is low which further reduces the cost of the deployment.
+
 
 # Technical Details
 **Environment**: Flask, Postgre SQL <br>
