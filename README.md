@@ -11,6 +11,133 @@ An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a 
     - Petrol
     - Diesel
     - LPG
+# REST API Documentation
+
+### Request
+
+`GET /api/v2/fuel?state=<state-code>&fuel=<fuel-name>`
+
+     curl -i -H 'Accept: application/json' "https://<host>/api/v2/fuel?state=TN&fuel=petrol"
+
+### Response - 200 OK
+
+  ```
+  {
+  "cities": [
+    {
+      "city": "Ariyalur", 
+      "currency": "INR", 
+      "fuel": "PETROL", 
+      "rate": "103.56"
+    }, 
+    {
+      "city": "Chennai", 
+      "currency": "INR", 
+      "fuel": "PETROL", 
+      "rate": "102.62"
+    },
+    
+    .
+    .
+    
+    
+    {
+      "city": "Thoothukudi", 
+      "currency": "INR", 
+      "fuel": "PETROL", 
+      "rate": "102.95"
+    }
+  ], 
+  "state_code": "TN", 
+  "state_name": "Tamil Nadu"
+}
+```
+
+
+### Error Response  - Parameter not given properly
+
+```
+{
+ 
+ "error": "Bad Error. Please double check the parameters. Refer available_states and available_fuel.",
+ 
+  "available_fuel": [
+    "petrol", 
+    "diesel", 
+    "lpg"
+  ], 
+  
+  "available_states": {
+    "AD": {
+      "state_code": "AD", 
+      "state_name": "Andhra Pradesh"
+    }, 
+    "AN": {
+      "state_code": "AN", 
+      "state_name": "Andaman and Nicobar Island"
+    }, 
+    "AR": {
+      "state_code": "AR", 
+      "state_name": "Arunachal Pradesh"
+    }, 
+    
+    .
+    .
+    
+    "UP": {
+      "state_code": "UP", 
+      "state_name": "Uttar Pradesh"
+    }, 
+    "WB": {
+      "state_code": "WB", 
+      "state_name": "West Bengal"
+    }
+  }
+}
+
+```
+### Error Response 2 - State_code or fuel_name is missing in GET
+
+```
+{
+  "error": "Please provide enough GET parameters. Refer available_states and available_fuel.",
+  
+  "available_fuel": [
+    "petrol", 
+    "diesel", 
+    "lpg"
+  ], 
+  
+  "available_states": {
+    "AD": {
+      "state_code": "AD", 
+      "state_name": "Andhra Pradesh"
+    }, 
+    "AN": {
+      "state_code": "AN", 
+      "state_name": "Andaman and Nicobar Island"
+    }, 
+    "AR": {
+      "state_code": "AR", 
+      "state_name": "Arunachal Pradesh"
+    }, 
+    
+    .
+    .
+    
+    "UP": {
+      "state_code": "UP", 
+      "state_name": "Uttar Pradesh"
+    }, 
+    "WB": {
+      "state_code": "WB", 
+      "state_name": "West Bengal"
+    }
+  }
+}
+
+```
+ 
 
 # Details
 Project is in the final stage, will bring up the link shortly!
