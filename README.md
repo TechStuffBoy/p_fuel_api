@@ -13,6 +13,8 @@ An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a 
     - LPG
 # REST API Documentation
 
+`Note: You should always check for 200 Response. If it is 404, then please refer to the error message. This 404 response is because either you have given wrong state code or not enough parameters.`
+
 ### Request
 
 `GET /api/v2/fuel?state=<state-code>&fuel=<fuel-name>`
