@@ -147,6 +147,8 @@ Project is in the final stage, will bring up the link shortly!
 However, please check **pre-prod** for reference, <br>
 https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging
 
+**Average Response Time: ~400 ms**
+
 Statewise Fuel price:- <br>
 GET /api/v2/fuel?state=TN&fuel=petrol <br>
 
