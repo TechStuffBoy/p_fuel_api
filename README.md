@@ -145,7 +145,9 @@ An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a 
 Project is in the final stage, will bring up the link shortly!
 
 However, please check **pre-prod** for reference, <br>
+```
 https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging
+```
 
 **Average Response Time: ~200 ms**
 
@@ -160,4 +162,6 @@ https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?stat
 
 To check available states,
 https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/available/states
+
+PS: I would re-add the authorization in a while, I kept open to just have a feel of it.
 ```
