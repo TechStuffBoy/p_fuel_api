@@ -149,13 +149,15 @@ https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging
 
 **Average Response Time: ~200 ms**
 
-Statewise Fuel price:- <br>
-GET /api/v2/fuel?state=TN&fuel=petrol <br>
+```
+Statewise Fuel price:-
+GET /api/v2/fuel?state=TN&fuel=petrol 
 
-Ex. <br>
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=TN&fuel=petrol (retrive petrol) <br>
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=DL&fuel=diesel (retrive diesel) <br>
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=HR&fuel=lpg (retrive LPG price) <br>
+Ex.
+https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=TN&fuel=petrol (retrive petrol) 
+https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=DL&fuel=diesel (retrive diesel)
+https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=HR&fuel=lpg (retrive LPG price)
 
-To check available states, <br>
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/available/states <br>
+To check available states,
+https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/available/states
+```
