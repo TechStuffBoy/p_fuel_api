@@ -144,24 +144,3 @@ An API for retrieving Indian petrol, diesel, and LPG pricing. I couldn't find a 
 # Details
 Project is in the final stage, will bring up the link shortly!
 
-However, please check **pre-prod** for reference, <br>
-```
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging
-```
-
-**Average Response Time: ~200 ms**
-
-```
-Statewise Fuel price:-
-GET /api/v2/fuel?state=TN&fuel=petrol 
-
-Ex.
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=TN&fuel=petrol (retrive petrol) 
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=DL&fuel=diesel (retrive diesel)
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/fuel?state=HR&fuel=lpg (retrive LPG price)
-
-To check available states,
-https://nolrs3iy1j.execute-api.ap-south-1.amazonaws.com/staging/api/v2/available/states
-
-PS: I would re-add the authorization in a while, I kept open to just have a feel of it.
-```
